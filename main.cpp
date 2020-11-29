@@ -1,12 +1,5 @@
-#include <cstdlib>
-#include <cstdio>
-#include <iostream>
-#include <cstring>
-#include <string>
-#include "colors.hpp"
-#include "utils.hpp"
-
-using namespace std;
+#include "colors.cpp"
+#include "utils.cpp"
 
 int main(int argsL, const char** args){
 string a="*";
@@ -21,7 +14,7 @@ if(argsL>2)
 if(argsL>3)
 {
 	   col=args[3];
-       col=getColor(col);
+       col=getColorA(col);
        if(col=="")
         cout  << yellow << "Invalid color \"" << args[3] << "\". Type " << green << args[0] << " --help " << yellow << "for help" << reset << endl;
 }
